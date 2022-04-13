@@ -8,5 +8,8 @@ public class Node {
 	public Node(int i) {
 		value = i;
 	}
-	
+
 }
+
+//za pomoca alt+prawo, alt+lewo mozemy przemieszczac sie po
+//obecnie otwartych plikach
