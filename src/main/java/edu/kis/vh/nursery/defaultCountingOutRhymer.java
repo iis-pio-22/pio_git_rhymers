@@ -11,24 +11,26 @@ public class defaultCountingOutRhymer {
 			NUMBERS[++total] = in;
 	}
 
-		public boolean callCheck() {
-			return total == -1;
-		}
-		
-			public boolean isFull() {
-				return total == 11;
-			}
-		
-				protected int peekaboo() {
-					if (callCheck())
-						return -1;
-					return NUMBERS[total];
-				}
-			
-					public int countOut() {
-						if (callCheck())
-							return -1;
-						return NUMBERS[total--];
-					}
+	public boolean callCheck() {
+		return total == -1;
+	}
 
+	public boolean isFull() {
+		return total == 11;
+	}
+
+	protected int peekaboo() {
+		if (callCheck())
+			return -1;
+		return NUMBERS[total];
+	}
+
+	public int countOut() {
+		if (callCheck())
+			return -1;
+		return NUMBERS[total--];
+	}
+
+//	kombinacja klawiszy alt + ← oraz alt + →
+//	powoduje przejście pomiędzy plikami z kodem programu
 }
