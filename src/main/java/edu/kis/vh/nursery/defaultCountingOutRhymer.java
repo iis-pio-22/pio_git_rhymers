@@ -11,24 +11,27 @@ public class defaultCountingOutRhymer {
 			NUMBERS[++total] = in;
 	}
 
-		public boolean callCheck() {
-			return total == -1;
-		}
-		
-			public boolean isFull() {
-				return total == 11;
-			}
-		
-				protected int peekaboo() {
-					if (callCheck())
-						return -1;
-					return NUMBERS[total];
-				}
-			
-					public int countOut() {
-						if (callCheck())
-							return -1;
-						return NUMBERS[total--];
-					}
+	public boolean callCheck() {
+		return total == -1;
+	}
+
+	public boolean isFull() {
+		return total == 11;
+	}
+
+	protected int peekaboo() {
+		if (callCheck())
+			return -1;
+		return NUMBERS[total];
+	}
+
+	public int countOut() {
+		if (callCheck())
+			return -1;
+		return NUMBERS[total--];
+	}
 
 }
+
+//Kombinacja klawiszy alt + strzałka lewo/prawo przełącza między kolejnymi plikami ostatnio modyfikowanymi/zapisanymi
+//Strzałka w lewo przełącza z dalszymi zmianami a w prawo z ostatnimi zmianami
