@@ -20,14 +20,16 @@ public class DefaultCountingOutRhymer {
 	}
 
 	protected int peekaboo() {
-		if (callCheck())
+		if (callCheck()) {
 			return -1;
+		}
 		return numbers[total];
 	}
 
 	public int countOut() {
-		if (callCheck())
+		if (callCheck()) {
 			return -1;
+		}
 		return numbers[total--];
 	}
 
