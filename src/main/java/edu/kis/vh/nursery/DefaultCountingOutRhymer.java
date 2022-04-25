@@ -3,9 +3,10 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
 	public static final int INDEX = -1;
-	public static final int CAPACITY = 11;
+	public static final int IS_EMPTY = -1;
+	public static final int CAPACITY = 12;
 	public int total = INDEX;
-	private final int[] numbers = new int[12];
+	private final int[] numbers = new int[CAPACITY];
 
 	public void countIn(int in) {
 		if (!isFull()) {
@@ -18,19 +19,19 @@ public class DefaultCountingOutRhymer {
 	}
 
 	public boolean isFull() {
-		return total == CAPACITY;
+		return total == CAPACITY-1;
 	}
 
 	protected int peekaboo() {
 		if (callCheck()) {
-			return INDEX;
+			return IS_EMPTY;
 		}
 		return numbers[total];
 	}
 
 	public int countOut() {
 		if (callCheck()) {
-			return INDEX;
+			return IS_EMPTY;
 		}
 		return numbers[total--];
 	}
