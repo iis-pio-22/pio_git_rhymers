@@ -17,3 +17,5 @@ public class FIFORhymer extends defaultCountingOutRhymer {
 		return ret;
 	}
 }
+// Polecenie 3: Temat: błędy formatowania i konwencji
+// Kombinacja klawiszy alt + strzalki służy do szybkiego przełączania między kartami
