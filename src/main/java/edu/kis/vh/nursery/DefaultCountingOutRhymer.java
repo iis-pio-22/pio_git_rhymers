@@ -11,13 +11,8 @@ public class DefaultCountingOutRhymer {
             NUMBERS[++numbersCounter] = number;
     }
 
-<<<<<<< b0546aead947bf5b9672d72e3204c49645ae42b3
-    public boolean callCheck() {
-        return numbersCounter == -1;
-=======
     public boolean isEmpty() {
-        return total == -1;
->>>>>>> changed methods names
+        return numbersCounter == -1;
     }
 
     public boolean isFull() {
