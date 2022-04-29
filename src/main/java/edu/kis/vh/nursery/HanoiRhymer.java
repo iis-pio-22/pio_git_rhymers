@@ -8,11 +8,11 @@ public class HanoiRhymer extends defaultCountingOutRhymer {
 		return totalRejected;
 	}
 
-	public void countIn(int in) {
-		if (!callCheck() && in > peekaboo())
+	public void countIn(int number) {
+		if (!callCheck() && number > peekaboo())
 			totalRejected++;
 		else
-			super.countIn(in);
+			super.countIn(number);
 	}
 }
 // Pytanie: Które wiersze w klasie HanoiRhymer były źle sformatowane?
