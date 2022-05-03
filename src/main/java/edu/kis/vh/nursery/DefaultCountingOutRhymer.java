@@ -7,10 +7,9 @@ public class DefaultCountingOutRhymer {
 	private static final int EMPTY_POSITION = -1;
 	private static final int FULL_POSITION = NUMBERS_MAX_SIZE - 1;
 
-
 	private final int[] numbers = new int[NUMBERS_MAX_SIZE];
 
-	public int total = EMPTY_POSITION;
+	private int total = EMPTY_POSITION;
 
 	public void countIn(int in) {
 		if (!isFull())
@@ -35,6 +34,10 @@ public class DefaultCountingOutRhymer {
 		if (callCheck())
 			return EMPTY_VALUE;
 		return numbers[total--];
+	}
+
+	public int getTotal() {
+		return total;
 	}
 
 //	kombinacja klawiszy alt + ← oraz alt + →
