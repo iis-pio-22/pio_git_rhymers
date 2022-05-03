@@ -31,6 +31,10 @@ public class DefaultCountingOutRhymer {
 		return numbers[total--];
 	}
 
+	public int getTotal() {
+		return total;
+	}
+
 //	kombinacja klawiszy alt + ← oraz alt + →
 //	powoduje przejście pomiędzy plikami z kodem programu
 }
