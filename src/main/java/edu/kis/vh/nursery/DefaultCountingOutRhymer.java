@@ -3,11 +3,15 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
 
-    public static final int INITIALIZE_VALUE = -1;
-    public static final int LIMIT = 12;
+    private static final int INITIALIZE_VALUE = -1;
+    private static final int LIMIT = 12;
     private final int[] NUMBERS = new int[LIMIT];
 
-    public int numbersCounter = INITIALIZE_VALUE;
+    public int getNumbersCounter() {
+        return numbersCounter;
+    }
+
+    private int numbersCounter = INITIALIZE_VALUE;
 
     public void countIn(int number) {
         if (!isFull())
