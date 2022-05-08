@@ -2,10 +2,10 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-	public static final int INDEX = -1;
-	public static final int IS_EMPTY = -1;
-	public static final int CAPACITY = 12;
-	public int total = INDEX;
+	private static final int INDEX = -1;
+	private static final int IS_EMPTY = -1;
+	private static final int CAPACITY = 12;
+	private int total = INDEX;
 	private final int[] numbers = new int[CAPACITY];
 
 	public void countIn(int in) {
