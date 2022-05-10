@@ -1,2 +1,5 @@
 pom
 README
+.bin
+.target
+.idea
