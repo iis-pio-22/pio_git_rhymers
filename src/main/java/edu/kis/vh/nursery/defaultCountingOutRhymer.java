@@ -7,11 +7,15 @@ public class defaultCountingOutRhymer {
 	public static final int CAPACITY = 12;
 	final private int[] numbers = new int[CAPACITY];
 
-	public int total = INITIAL;
+	private int total = INITIAL;
 
 	public void countIn(int in) {
 		if (!isFull())
 			numbers[++total] = in;
+	}
+
+	public int getTotal() {
+		return total;
 	}
 
 	public boolean callCheck() {
