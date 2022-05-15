@@ -8,7 +8,7 @@ public class DefaultCountingOutRhymer {
     public static final int INITIAL_VALUE = -1;
     final private int[] numbers = new int[NUMBERS_SIZE];
 
-    public int total = INITIAL_VALUE;
+    private int total = INITIAL_VALUE;
 
     public void countIn(int in) {
         if (!isFull())
@@ -21,6 +21,14 @@ public class DefaultCountingOutRhymer {
 
     public boolean isFull() {
         return total == MAX_STACK_SIZE;
+    }
+
+    public int getTotal() {
+        return total;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
     }
 
     protected int peekaboo() {
