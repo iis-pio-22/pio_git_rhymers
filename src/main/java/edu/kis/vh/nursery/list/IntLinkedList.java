@@ -2,17 +2,17 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 
-	public static final int default_value = -1;
-	Node last;
-	int i;
+	public static final int EMPTY = -1;
+	private Node last;
+	private int i;
 
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
 		else {
-			last.next = new Node(i);
-			last.next.prev = last;
-			last = last.next;
+			last.setNext(new Node(i));
+			last.getNext().setPrev(last);
+			last = last.getNext();
 		}
 	}
 
@@ -23,12 +23,17 @@ public class IntLinkedList {
 	public boolean isFull() {
 		return false;
 	}
+	public int top() {
+		if (isEmpty())
+			return EMPTY;
+		return last.getValue();
+	}
 
 	public int pop() {
 		if (isEmpty())
-			return default_value;
-		int ret = last.value;
-		last = last.prev;
+			return EMPTY;
+		int ret = last.getValue();
+		last = last.getPrev();
 		return ret;
 	}
 
