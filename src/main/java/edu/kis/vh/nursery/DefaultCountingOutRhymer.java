@@ -17,7 +17,6 @@ public class DefaultCountingOutRhymer {
 
     public boolean callCheck() {
         return total == EMPTY;
-
     }
 
     public boolean isFull() {
