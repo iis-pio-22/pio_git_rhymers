@@ -23,7 +23,6 @@ public class IntLinkedList {
 	public boolean isFull() {
 		return false;
 	}
-
 	public int top() {
 		if (isEmpty())
 			return EMPTY;
