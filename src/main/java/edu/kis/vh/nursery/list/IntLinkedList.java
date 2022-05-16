@@ -2,6 +2,20 @@ package edu.kis.vh.nursery.list;
 
 public class IntLinkedList {
 
+
+	private static class Node {
+
+		private final int value;
+		protected Node prev, next;
+
+		public Node(int i) {
+			value = i;
+		}
+		public int getValue() {
+			return this.value;
+		}
+	}
+
 	Node last;
 
 	public void push(int i) {
@@ -37,3 +51,5 @@ public class IntLinkedList {
 	}
 
 }
+
+// klasa node została usunięta i została klasą wewnętrzną by mogła być prywatna
