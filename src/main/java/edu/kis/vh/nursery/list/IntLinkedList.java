@@ -40,6 +40,7 @@ public class IntLinkedList {
 	 * 	public void push(int i)
 	 * funkcja dodaje nowy węzeł na koniec listy i przypisuje mu wartość
 	 */
+	//TODO funkcja push jest nie używana można ją usunąć
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -63,6 +64,7 @@ public class IntLinkedList {
 	 * 	public boolean isFull()
 	 * funkcja infromuje czy lista jest pełna
 	 */
+	//TODO funkcja isFull jest nie używana można ją usunąć
 	public boolean isFull() {
 		return false;
 	}
@@ -72,6 +74,7 @@ public class IntLinkedList {
 	 * 	public int top()
 	 * funkcja zwraca wartość z początku listy
 	 */
+	//TODO funkcja top jest nie używana można ją usunąć
 	public int top() {
 		if (isEmpty())
 			return -1;
@@ -82,6 +85,7 @@ public class IntLinkedList {
 	 * 	public int top()
 	 * funkcja zwraca wartość z końca listy i usuwa węzeł
 	 */
+	//TODO funkcja pop jest nie używana można ją usunąć
 	public int pop() {
 		if (isEmpty())
 			return -1;
