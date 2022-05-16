@@ -2,6 +2,7 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
+
 	private static final int CAPACITY = 12;
 	private static final int INITIAL = -1;
 	private static final int IF_EMPTY=-1;
@@ -52,8 +53,6 @@ public class DefaultCountingOutRhymer {
 	public int getTotal() {
 		return total;
 	}
-
-
 	public int[] getNumbers() {
 		return numbers;
 	}
