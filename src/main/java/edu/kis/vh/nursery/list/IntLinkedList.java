@@ -1,5 +1,7 @@
 package edu.kis.vh.nursery.list;
 
+
+//TODO klasa nie jest używana
 public class IntLinkedList {
 	/**
 	 * klasa reprezentująca listę składającą się z węzłow
@@ -34,7 +36,7 @@ public class IntLinkedList {
 		}
 	}
 
-	Node last;
+	private Node last;
 
 	/**
 	 * 	public void push(int i)
@@ -64,7 +66,7 @@ public class IntLinkedList {
 	 * 	public boolean isFull()
 	 * funkcja infromuje czy lista jest pełna
 	 */
-	//TODO funkcja isFull jest nie używana można ją usunąć
+	//TODO funkcja isFull jest nie używana
 	public boolean isFull() {
 		return false;
 	}
@@ -74,7 +76,7 @@ public class IntLinkedList {
 	 * 	public int top()
 	 * funkcja zwraca wartość z początku listy
 	 */
-	//TODO funkcja top jest nie używana można ją usunąć
+	//TODO funkcja top jest nie używana
 	public int top() {
 		if (isEmpty())
 			return -1;
@@ -85,7 +87,7 @@ public class IntLinkedList {
 	 * 	public int top()
 	 * funkcja zwraca wartość z końca listy i usuwa węzeł
 	 */
-	//TODO funkcja pop jest nie używana można ją usunąć
+	//TODO funkcja pop jest nie używana
 	public int pop() {
 		if (isEmpty())
 			return -1;

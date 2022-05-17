@@ -11,15 +11,15 @@ public class DefaultCountingOutRhymer {
 
 	private int total = INITIAL;
 
-	//TODO funkcja getCAPACITY jest nie używana można ją usunąć
+	//TODO funkcja getCAPACITY jest nie używana
 	public static int getCAPACITY() {
 		return CAPACITY;
 	}
-	//TODO funkcja getINITIAL jest nie używana można ją usunąć
+	//TODO funkcja getINITIAL jest nie używana
 	public static int getINITIAL() {
 		return INITIAL;
 	}
-	//TODO funkcja getIfEmpty jest nie używana można ją usunąć
+	//TODO funkcja getIfEmpty jest nie używana
 	public static int getIfEmpty() {
 		return IF_EMPTY;
 	}
@@ -50,12 +50,12 @@ public class DefaultCountingOutRhymer {
 			return IF_EMPTY;
 		return numbers[total--];
 	}
-	//TODO funkcja getTotal jest nie używana można ją usunąć
+	//TODO funkcja getTotal jest nie używana
 	public int getTotal() {
 		return total;
 	}
 
-	//TODO funkcja getNumbers jest nie używana można ją usunąć
+	//TODO funkcja getNumbers jest nie używana
 	public int[] getNumbers() {
 		return numbers;
 	}
