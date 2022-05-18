@@ -10,20 +10,23 @@ public class DefaultRhymersFactory implements Rhymersfactory {
 	public DefaultCountingOutRhymer GetStandardRhymer() {
 		return new DefaultCountingOutRhymer();
 	}
+	/*Publiczna metoda typu DefaultCountingOutRhymer zwracajaca DefaultCountingOutRhymer*/
 
 	@Override
 	public DefaultCountingOutRhymer GetFalseRhymer() {
 		return new DefaultCountingOutRhymer();
 	}
+	/*Publiczna metoda typu DefaultCountingOutRhymer zwracajaca DefaultCountingOutRhymer*/
 
 	@Override
 	public DefaultCountingOutRhymer GetFIFORhymer() {
 		return new FIFORhymer();
 	}
+	/*Publiczna metoda typu DefaultCountingOutRhymer zwracająca FIFORhymer()*/
 
 	@Override
 	public DefaultCountingOutRhymer GetHanoiRhymer() {
 		return new HanoiRhymer();
 	}
-
+	/*Publiczna metoda typu DefaultCountingOutRhymer zwracajaca HanoiRhymer()*/
 }
