@@ -13,7 +13,7 @@ public class DefaultCountingOutRhymer {
 	public static final int INIT_INDEX = -1;
 	private final int[] NUMBERS = new int[CAPACITY];
 
-	public int total = INIT_INDEX;
+	protected int total = INIT_INDEX;
 
 	/**
 	 * @return
