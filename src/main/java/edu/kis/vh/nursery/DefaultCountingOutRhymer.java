@@ -13,12 +13,16 @@ public class DefaultCountingOutRhymer {
 	public static final int INIT_INDEX = -1;
 	private final int[] NUMBERS = new int[CAPACITY];
 
-	protected int total = INIT_INDEX;
+	private int total = INIT_INDEX;
 
 	/**
 	 * @return
 	 */
-	public void countIn(int in) {
+	public int getTotal(){
+		return total;
+	}
+
+	protected void countIn(int in) {
 		if (!isFull())
 			NUMBERS[++total] = in;
 	}
@@ -26,13 +30,13 @@ public class DefaultCountingOutRhymer {
 	/**
 	 * @return
 	 */
-	public boolean callCheck() {
+	protected boolean callCheck() {
 		return total == INIT_INDEX;
 	}
 	/**
 	 * @return
 	 */
-	public boolean isFull() {
+	protected boolean isFull() {
 		return total == CAPACITY-1;
 	}
 
@@ -48,10 +52,14 @@ public class DefaultCountingOutRhymer {
 	/**
 	 * @return
 	 */
-	public int countOut() {
+	protected int countOut() {
 		if (callCheck())
 			return INIT_INDEX;
 		return NUMBERS[total--];
+	}
+
+	public int[] getNUMBERS() {
+		return NUMBERS;
 	}
 
 }
