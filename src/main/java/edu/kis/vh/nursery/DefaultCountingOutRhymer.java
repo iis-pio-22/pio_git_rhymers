@@ -4,9 +4,10 @@ public class DefaultCountingOutRhymer {
 
     public static final int SIZE = 12;
     public static final int EMPTY = -1;
+    public static final int INDEX = -1;
+    private int total = INDEX;
     private final int[] numbers = new int[SIZE];
 
-    private int total = -1;
 
     public void countIn(int in) {
         if (!isFull())
@@ -14,11 +15,11 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean callCheck() {
-        return total == EMPTY;
+        return total == INDEX;
     }
 
     public boolean isFull() {
-        return total == 11;
+        return total == SIZE - 1;
     }
 
     protected int peekaboo() {
